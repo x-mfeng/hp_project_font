@@ -76,8 +76,8 @@ export default {
   methods: {
     fetchData() {
       this.listLoading = true
-      getList('','',10,1).then(response => {
-        this.list = response.data
+      getList('','',1,10).then(response => {
+        this.list = response.data.list
         this.listLoading = false
       })
     }
